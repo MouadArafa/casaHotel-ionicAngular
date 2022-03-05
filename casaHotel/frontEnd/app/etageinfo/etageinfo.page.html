@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title > Etage </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <img class="card-img" [src]=""/>
+  <ion-row id="etageInfo">
+    <ion-col> <ion-icon class="etageInfoIcon" name="bed"></ion-icon> <ion-label>{{etageimg}} Chambres</ion-label> </ion-col>
+    <ion-col> <ion-icon class="etageInfoIcon" name="body" >  </ion-icon><ion-label>6 employee</ion-label> </ion-col>
+  </ion-row>
+  <h2 id="titleEtage">Les détails</h2>
+  <div>
+    <ion-segment>
+      <ion-segment-button>Chambres</ion-segment-button>
+      <ion-segment-button>Employees</ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

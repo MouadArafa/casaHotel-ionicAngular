@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="warning"> Les Etages </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" >
+    <ion-list class="card-background-page">
+      <ion-item *ngFor="let e of etage"  class="card" routerLink="gotoDetails()" >
+        <!-- <ion-card > -->
+        <img class="card-image"  [src]="e.img"/>
+        <div class="card-title"> <span class="card-title-cat">{{e.id}} Etgae</span> </div>
+        <ul class="infoItems">
+          <li>
+            <ion-icon name="body">{{e.nbEmp}} DH</ion-icon>
+          </li>
+          <li>
+            <ion-icon name="bed">{{e.nbChambre}}</ion-icon>
+          </li>
+        </ul>
+      <!-- </ion-card> -->
+     </ion-item>
+    </ion-list>
+
+  <!-- <ion-card div class="card">
+    <img class="card-image" src="assets/image/bleu.png"/>
+    <div class="card-title"> <span class="card-title-cat">2 Etgae</span> </div>
+    <ul class="infoItems">
+      <li>
+        <ion-icon name="body">5</ion-icon>
+      </li>
+      <li>
+        <ion-icon name="bed">6</ion-icon>
+      </li>
+    </ul>
+  </ion-card>
+  <ion-card div class="card">
+    <img class="card-image" src="assets/image/vert.png"/>
+    <div class="card-title"> <span class="card-title-cat">3 Etgae</span> </div>
+    <ul class="infoItems">
+      <li>
+        <ion-icon name="body">5</ion-icon>
+      </li>
+      <li>
+        <ion-icon name="bed">6</ion-icon>
+      </li>
+    </ul>
+  </ion-card>
+  <ion-card div class="card">
+    <img class="card-image" src="assets/image/rouge.png"/>
+    <div class="card-title"> <span class="card-title-cat">4 Etgae</span> </div>
+    <ul class="infoItems">
+      <li>
+        <ion-icon name="body">5</ion-icon>
+      </li>
+      <li>
+        <ion-icon name="bed">6</ion-icon>
+      </li>
+    </ul>
+  </ion-card> -->
+</ion-content>
